@@ -30,3 +30,7 @@ rails g solidus_gateway:install
       Copied migration 20160514021123_update_paypal_payment_method_type.solidus_gateway.rb from solidus_gateway
       Copied migration 20160514021124_migrate_stripe_preferences.solidus_gateway.rb from solidus_gateway
       Would you like to run the migrations now? [Y/n]
+
+gem 'braintree', '~> 2.60'
+Post install
+none
