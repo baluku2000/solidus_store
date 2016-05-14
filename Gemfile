@@ -48,3 +48,5 @@ end
 
 gem 'solidus', '1.2.2'
 gem 'solidus_auth_devise'
+
+gem 'solidus_gateway', '~> 1.0', '>= 1.0.1'

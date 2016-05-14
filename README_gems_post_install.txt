@@ -17,3 +17,16 @@ rails g spree:install --migrate=false --sample=false --seed=false # this step cr
 bundle exec rake db:migrate
 bundle exec rake db:seed
 bundle exec rake spree_sample:load
+
+[v0.1]
+gem 'solidus_gateway', '~> 1.0', '>= 1.0.1'
+Post install
+rails g solidus_gateway:install
+->  run  bundle exec rake railties:install:migrations FROM=solidus_gateway from "."
+      Copied migration 20160514021119_create_skrill_transactions.solidus_gateway.rb from solidus_gateway
+      Copied migration 20160514021120_update_braintree_payment_method_type.solidus_gateway.rb from solidus_gateway
+      Copied migration 20160514021121_update_stripe_payment_method_type.solidus_gateway.rb from solidus_gateway
+      Copied migration 20160514021122_update_balanced_payment_method_type.solidus_gateway.rb from solidus_gateway
+      Copied migration 20160514021123_update_paypal_payment_method_type.solidus_gateway.rb from solidus_gateway
+      Copied migration 20160514021124_migrate_stripe_preferences.solidus_gateway.rb from solidus_gateway
+      Would you like to run the migrations now? [Y/n]

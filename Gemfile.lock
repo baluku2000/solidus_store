@@ -263,6 +263,8 @@ GEM
       jquery-rails
       solidus_api (= 1.2.2)
       solidus_core (= 1.2.2)
+    solidus_gateway (1.0.1)
+      solidus_core (~> 1.1)
     solidus_sample (1.2.2)
       solidus_core (= 1.2.2)
     spring (1.7.1)
@@ -324,6 +326,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   solidus (= 1.2.2)
   solidus_auth_devise
+  solidus_gateway (~> 1.0, >= 1.0.1)
   spring
   sqlite3
   turbolinks
