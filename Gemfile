@@ -51,3 +51,5 @@ gem 'solidus_auth_devise'
 
 gem 'solidus_gateway', '~> 1.0', '>= 1.0.1'
 gem 'braintree', '~> 2.60'
+
+gem 'spree_mail_settings', :path => './gem_hack/spree_mail_settings-2-4'

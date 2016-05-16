@@ -5,7 +5,11 @@ Spree.config do |config|
   # Without this preferences are loaded and persisted to the database. This
   # changes them to be stored in memory.
   # This will be the default in a future version.
-  config.use_static_preferences!
+  # config.use_static_preferences! # ming 20150516 commented. This will result in when save,
+                                   # key/value pairs will save to spree_preferences tbl rather than memory.
+                                   # Alert! saved in plain text to spree_preferences tbl, so stuff like
+                                   # smtp_password ( from app_configuration_decorator.rb in
+                                   # gem_hack/spree_mail_settings-2-4/app/models/spreeat ) beware!
 
   # Core:
 
@@ -13,7 +17,8 @@ Spree.config do |config|
   config.currency = "USD"
 
   # from address for transactional emails
-  config.mails_from = "store@example.com"
+  config.mails_from = "store@example.com" # ming. This field is superflous and not being used.
+                                          # It is superceded by "MAIL FROM ADDRESS" at General Settings page.
 
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false

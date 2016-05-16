@@ -1,3 +1,9 @@
+PATH
+  remote: ./gem_hack/spree_mail_settings-2-4
+  specs:
+    spree_mail_settings (2.2.0)
+      solidus_backend (~> 1.2.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -330,6 +336,7 @@ DEPENDENCIES
   solidus (= 1.2.2)
   solidus_auth_devise
   solidus_gateway (~> 1.0, >= 1.0.1)
+  spree_mail_settings!
   spring
   sqlite3
   turbolinks

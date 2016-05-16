@@ -34,3 +34,14 @@ rails g solidus_gateway:install
 gem 'braintree', '~> 2.60'
 Post install
 none
+
+gem 'spree_mail_settings', :path => './gem_hack/spree_mail_settings-2-4'
+Post install
+none
+Hacked spree_mail_settings-2-4 gem resides in gem_hack dir.
+As gem_hack dir been excluded from git ( .gitignore modified to
+include line /gem_hack), you will need to manually create gem_hack
+dir ( on par level with dirs app, db, config, etc ...), and then
+copy spree_mail_settings-2-4 into gem_hack.
+Copy of spree_mail_settings-2-4 is given by below path
+  /home/jerry/dev/me/solidus_store/gem_hack/spree_mail_settings-2-4

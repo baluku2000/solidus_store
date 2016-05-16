@@ -45,3 +45,5 @@
 /config/database.yml
 /config/secrets.yml
 /config/initializers/devise.rb
+
+/gem_hack
