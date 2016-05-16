@@ -4,3 +4,7 @@ Release Notes
 blah ...
 Fix some bugs.
 Documentation.
+
+[release-0.2]
+blah ...
+Fix some bugs.
