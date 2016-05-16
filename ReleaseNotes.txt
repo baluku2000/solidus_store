@@ -8,3 +8,4 @@ Documentation.
 [release-0.2]
 blah ...
 Fix some bugs.
+Documentation.
