@@ -9,3 +9,7 @@ Documentation.
 blah ...
 Fix some bugs.
 Documentation.
+
+[release-0.3]
+blah ...
+Fix some bugs.
