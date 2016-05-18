@@ -45,3 +45,8 @@ dir ( on par level with dirs app, db, config, etc ...), and then
 copy spree_mail_settings-2-4 into gem_hack.
 Copy of spree_mail_settings-2-4 is given by below path
   /home/jerry/dev/me/solidus_store/gem_hack/spree_mail_settings-2-4
+
+gem 'spree_active_shipping', :path => './gem_hack/spree_active_shipping_2_4_0'
+Post install
+bundle exec rake railties:install:migrations
+bundle exec rake db:migrate
